@@ -19,6 +19,7 @@ namespace EcoAcceso.Core.Application
             #region Services
             services.AddTransient(typeof(IGenericService<,,>), typeof(GenericService<,,>));
             services.AddTransient<IProtectedAreaService, ProtectedAreaService>();
+            services.AddTransient<INewsService, NewsService>();
             #endregion
         }
     }

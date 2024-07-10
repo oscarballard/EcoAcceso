@@ -11,7 +11,7 @@ namespace EcoAcceso.Core.Application.Interfaces.Services
         where ViewModel : class
         where Model : class
     {
-        public Task Update(SaveViewModel vm, int id);
+        public Task Update(ViewModel vm, int id);
 
         public Task<SaveViewModel> Add(SaveViewModel vm);
 

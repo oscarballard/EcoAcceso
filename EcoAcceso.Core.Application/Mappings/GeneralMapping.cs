@@ -19,6 +19,10 @@ namespace EcoAcceso.Core.Application.Mappings
             .ReverseMap();
 
             CreateMap<News, CreateNewsDto>()
+            .ReverseMap().ForMember(x => x.Id, opt => opt.Ignore());
+
+
+            CreateMap<News, GetNewsDto>()
             .ReverseMap();
         }
     }

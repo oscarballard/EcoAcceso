@@ -36,6 +36,7 @@ namespace EcoAcceso.Infrastruture.Persistence
             #region Repositories
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IProtectedAreaRepository, ProtectedAreaRepository>();
+            services.AddTransient<INewsRepository, NewsRepository>();
             #endregion
         }
     }

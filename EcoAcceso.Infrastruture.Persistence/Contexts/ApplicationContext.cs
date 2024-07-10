@@ -15,10 +15,13 @@ namespace EcoAcceso.Infrastruture.Persistence.Contexts
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) { }
         public DbSet<ProtectedArea> ProtectedArea { get; set; }
+
+        public DbSet<News> News { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
             builder.ApplyConfiguration(new ProtectedAreaMap());
+            builder.ApplyConfiguration(new NewsMap());
         }
     }
 }

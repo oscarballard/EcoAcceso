@@ -23,7 +23,7 @@ namespace EcoAcceso.Core.Application.Services
             _mapper = mapper;
         }
 
-        public virtual async Task Update(SaveViewModel vm, int id)
+        public virtual async Task Update(ViewModel vm, int id)
         {
             Model entity = _mapper.Map<Model>(vm);
 
