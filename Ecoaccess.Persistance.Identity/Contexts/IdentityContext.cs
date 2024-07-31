@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Ecoaccess.Persistance.Identity.Contexts
 {
     public class IdentityContext : IdentityDbContext<ApplicationUser>
-    {
+    { 
         public IdentityContext(DbContextOptions<IdentityContext> options) : base(options) { }
 
 
