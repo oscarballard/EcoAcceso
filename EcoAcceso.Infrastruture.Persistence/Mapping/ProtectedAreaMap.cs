@@ -1,4 +1,4 @@
-﻿using EcoAcceso.Core.Domain.Entities;
+﻿using EcoAccesso.Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoAcceso.Infrastruture.Persistence.Mapping
+namespace EcoAccesso.Infrastruture.Persistence.Mapping
 {
     public class ProtectedAreaMap : IEntityTypeConfiguration<ProtectedArea>
     {

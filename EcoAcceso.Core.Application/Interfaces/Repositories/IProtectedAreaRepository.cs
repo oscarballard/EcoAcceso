@@ -1,11 +1,11 @@
-﻿using EcoAcceso.Core.Domain.Entities;
+﻿using EcoAccesso.Core.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoAcceso.Core.Application.Interfaces.Repositories
+namespace EcoAccesso.Core.Application.Interfaces.Repositories
 {
     public interface IProtectedAreaRepository : IGenericRepository<ProtectedArea>
     {

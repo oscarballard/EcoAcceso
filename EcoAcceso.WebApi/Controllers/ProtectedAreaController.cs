@@ -1,25 +1,20 @@
-﻿using EcoAcceso.Core.Application.Dtos.ProctectedArea;
-using EcoAcceso.Core.Application.Interfaces.Services;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity.Data;
+﻿using EcoAcceso.WebApi.Controllers;
+using EcoAccesso.Core.Application.Dtos.ProctectedArea;
+using EcoAccesso.Core.Application.Interfaces.Services;
+using EcoAccesso.Core.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcoAcceso.WebApi.Controllers
+namespace EcoAccesso.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProtectedAreaController : ControllerBase
+    public class ProtectedAreaController : BaseController<CreateProtectedAreaDto, GetProtectedAreaDto, ProtectedArea, IProtectedAreaService>
     {
-        private readonly IProtectedAreaService _protectedAreaService;
-        public ProtectedAreaController(IProtectedAreaService protectedAreaService) 
+        private readonly IProtectedAreaService _ProtectedAreatRepository;
+        public ProtectedAreaController(IProtectedAreaService service, ILogger<ProtectedAreaController> logger)
+       : base(service, logger)
         {
-            _protectedAreaService = protectedAreaService;
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> Create(CreateProtectedAreaDto dto)
-        {
-            return Ok(await _protectedAreaService.Add(dto));
+            _ProtectedAreatRepository = service;
         }
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EcoAcceso.WebApi.Extensions
+namespace EcoAccesso.WebApi.Extensions
 {
     public static class ServiceExtension
     {
@@ -20,11 +20,11 @@ namespace EcoAcceso.WebApi.Extensions
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "StockApp API",
+                    Title = "EcoAccess API",
                     Description = "This Api will be responsible for overall data distribution",
                     Contact = new OpenApiContact
                     {
-                        Name = "Team Inpha",
+                        Name = "Proyecto Final",
                         Email = "Pagina",
                         Url = new Uri("https://www.itla.edu.do")
                     }

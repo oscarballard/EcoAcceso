@@ -16,4 +16,8 @@
     <ProjectReference Include="..\EcoAcceso.Core\EcoAcceso.Core.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\Weather\" />
+  </ItemGroup>
+
 </Project>

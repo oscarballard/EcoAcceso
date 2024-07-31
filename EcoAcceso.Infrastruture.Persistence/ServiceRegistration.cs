@@ -1,6 +1,7 @@
-﻿using EcoAcceso.Core.Application.Interfaces.Repositories;
-using EcoAcceso.Infrastruture.Persistence.Contexts;
-using EcoAcceso.Infrastruture.Persistence.Repositories;
+﻿using EcoAcceso.Infrastruture.Persistence.Repositories;
+using EcoAccesso.Core.Application.Interfaces.Repositories;
+using EcoAccesso.Infrastruture.Persistence.Contexts;
+using EcoAccesso.Infrastruture.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoAcceso.Infrastruture.Persistence
+namespace EcoAccesso.Infrastruture.Persistence
 {
     //Extension Method - Decorator
     public static class ServiceRegistration
@@ -36,6 +37,13 @@ namespace EcoAcceso.Infrastruture.Persistence
             #region Repositories
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IProtectedAreaRepository, ProtectedAreaRepository>();
+            services.AddTransient<IPermissionRequestRepository, PermissionRequestRepository>();
+            services.AddTransient<IProtectedAreaRepository, ProtectedAreaRepository>();
+            services.AddTransient<IReservationRepository, ReservationRepository>();
+            services.AddTransient<INotificationRepository, NotificationRepository>();
+            services.AddTransient<IVisitHistoryRepository, VisitHistoryRepository>();
+            services.AddTransient<IMaintenanceEventRepository, MaintenanceEventRepository>();
+            services.AddTransient<IIncidentReportRepository, IncidentReportRepository>();
             #endregion
         }
     }

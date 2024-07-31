@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace EcoAcceso.Infrastruture.Persistence.Migrations
+namespace EcoAccesso.Infrastruture.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration
@@ -11,7 +11,7 @@ namespace EcoAcceso.Infrastruture.Persistence.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "ProtectedArea",
+                name: "PermissionRequest",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -31,7 +31,7 @@ namespace EcoAcceso.Infrastruture.Persistence.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ProtectedArea");
+                name: "PermissionRequest");
         }
     }
 }

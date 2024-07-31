@@ -1,7 +1,7 @@
-﻿using EcoAcceso.Core.Application;
-using EcoAcceso.Infrastruture.Persistence;
-using EcoAcceso.WebApi.Extensions;
-namespace EcoAcceso.WebApi
+﻿using EcoAccesso.Core.Application;
+using EcoAccesso.Infrastruture.Persistence;
+using EcoAccesso.WebApi.Extensions;
+namespace EcoAccesso.WebApi
 {
     public class Startup
     {
