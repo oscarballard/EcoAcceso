@@ -1,4 +1,4 @@
-using EcoAcceso.WebApi;
+using EcoAccesso.WebApi;
 
 var builder = WebApplication.CreateBuilder(args);
 Startup setup = new(builder.Configuration);

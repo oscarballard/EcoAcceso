@@ -1,4 +1,4 @@
-﻿namespace EcoAcceso.WebApi.Extensions
+﻿namespace EcoAccesso.WebApi.Extensions
 {
     public static class AppExtensions
     {

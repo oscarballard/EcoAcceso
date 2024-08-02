@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoAcceso.Core.Application.Interfaces.Services
+namespace EcoAccesso.Core.Application.Interfaces.Services
 {
     public interface IGenericService<SaveViewModel, ViewModel, Model>
         where SaveViewModel : class

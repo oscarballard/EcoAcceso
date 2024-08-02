@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoAcceso.Core.Application.Dtos.ProctectedArea
+namespace EcoAccesso.Core.Application.Dtos.ProctectedArea
 {
     public class GetProtectedAreaDto
     {

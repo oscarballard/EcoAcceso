@@ -1,5 +1,5 @@
-﻿using EcoAcceso.Core.Application.Interfaces.Repositories;
-using EcoAcceso.Infrastruture.Persistence.Contexts;
+﻿using EcoAccesso.Core.Application.Interfaces.Repositories;
+using EcoAccesso.Infrastruture.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoAcceso.Infrastruture.Persistence.Repositories
+namespace EcoAccesso.Infrastruture.Persistence.Repositories
 {
     public class GenericRepository<Entity> : IGenericRepository<Entity> where Entity : class
     {

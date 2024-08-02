@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using EcoAcceso.Core.Application.Interfaces.Repositories;
-using EcoAcceso.Core.Application.Interfaces.Services;
+using EcoAccesso.Core.Application.Interfaces.Repositories;
+using EcoAccesso.Core.Application.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EcoAcceso.Core.Application.Services
+namespace EcoAccesso.Core.Application.Services
 {
     public class GenericService<SaveViewModel, ViewModel, Model> : IGenericService<SaveViewModel, ViewModel, Model>
             where SaveViewModel : class

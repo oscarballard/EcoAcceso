@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoAcceso.Core.Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EcoAcceso.Infrastruture.Persistence", "EcoAcceso.Infrastruture.Persistence\EcoAcceso.Infrastruture.Persistence.csproj", "{810ABB11-A28D-43F8-8169-E4CBA91DB308}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecoaccess.Persistance.Identity", "Ecoaccess.Persistance.Identity\Ecoaccess.Persistance.Identity.csproj", "{752CBBDE-53D4-4414-B4E2-78C06D8AB020}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{810ABB11-A28D-43F8-8169-E4CBA91DB308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{810ABB11-A28D-43F8-8169-E4CBA91DB308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{810ABB11-A28D-43F8-8169-E4CBA91DB308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{752CBBDE-53D4-4414-B4E2-78C06D8AB020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{752CBBDE-53D4-4414-B4E2-78C06D8AB020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{752CBBDE-53D4-4414-B4E2-78C06D8AB020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{752CBBDE-53D4-4414-B4E2-78C06D8AB020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 		{54F2C95D-20B1-4204-B56B-512B70667ECB} = {C6C00100-884D-4E62-ACA5-FBAF0B47B718}
 		{6C41D71B-C892-423E-B9E0-EF100162A9D4} = {C6C00100-884D-4E62-ACA5-FBAF0B47B718}
 		{810ABB11-A28D-43F8-8169-E4CBA91DB308} = {DC1C3B93-6B31-419D-A66C-E391DEE27448}
+		{752CBBDE-53D4-4414-B4E2-78C06D8AB020} = {DC1C3B93-6B31-419D-A66C-E391DEE27448}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E2D22E0E-57FE-4D43-B7FC-F2EDBBF264A2}
